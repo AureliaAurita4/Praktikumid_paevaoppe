@@ -12,16 +12,24 @@ public class Tabel2 {
         System.out.println("Sisesta tabeli suurust");
         int tabeliSuurus = TextIO.getlnInt();
 
-        for (int j = 0; j < tabeliSuurus; j++) {
-            for (int i = 0; i < tabeliSuurus; i++) {
-                if (j == i) {
+        for (int x = 0; x < tabeliSuurus + 1; x++) {
+            System.out.print("--");
+        }
+        System.out.println();
+
+        for (int i = 0; i < tabeliSuurus; i++) {
+            System.out.print("| ");
+            for (int j = 0; j < tabeliSuurus; j++) {
+
+                if (i == j || i + j == (tabeliSuurus - 1)) {
                     System.out.print("x ");
                 } else {
                     System.out.print("0 ");
                 }
-                System.out.print("(j:" + j + " i:" + i + ") ");
+                //System.out.print("(i:" + i + " j:" + j + ") ");
             }
-            System.out.println(); //reavahetus
+            System.out.println("|"); //reavahetus
+
         }
     }
 }
