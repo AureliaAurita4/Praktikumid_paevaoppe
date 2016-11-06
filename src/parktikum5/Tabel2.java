@@ -12,7 +12,7 @@ public class Tabel2 {
         System.out.println("Sisesta tabeli suurust");
         int tabeliSuurus = TextIO.getlnInt();
 
-        for (int x = 0; x < tabeliSuurus + 1; x++) {
+        for (int x = 0; x <= tabeliSuurus + 1; x++) {
             System.out.print("--");
         }
         System.out.println();
@@ -31,5 +31,11 @@ public class Tabel2 {
             System.out.println("|"); //reavahetus
 
         }
+
+        for (int y = 0; y <= tabeliSuurus + 1; y++) {
+            System.out.print("--");
+        }
+        System.out.println();
     }
+
 }
