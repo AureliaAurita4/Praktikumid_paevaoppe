@@ -26,7 +26,7 @@ public class Tabel2 {
                 } else {
                     System.out.print("0 ");
                 }
-                //System.out.print("(i:" + i + " j:" + j + ") ");
+                System.out.print("(i:" + i + " j:" + j + ") ");
             }
             System.out.println("|"); //reavahetus
 

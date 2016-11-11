@@ -6,7 +6,7 @@ package parktikum5;
 public class Tabel3 {
     public static void main(String[] args) {
 
-        int tabeliSuurus = 4;
+        int tabeliSuurus = 7;
 
         for (int i = 0; i < tabeliSuurus; i++) {
             System.out.print(i + " ");
@@ -23,7 +23,9 @@ public class Tabel3 {
 
             }
             System.out.println();
+
         }
+
 
 //        for (int i = 0; i < tabeliSuurus; i++) {
 //            for (int j = 0; j < tabeliSuurus; j++) {
