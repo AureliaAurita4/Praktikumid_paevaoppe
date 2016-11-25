@@ -12,30 +12,32 @@ public class Tabel2 {
         System.out.println("Sisesta tabeli suurust");
         int tabeliSuurus = TextIO.getlnInt();
 
-        for (int x = 0; x <= tabeliSuurus + 1; x++) {
-            System.out.print("--");
-        }
-        System.out.println();
+        tryki22ris(tabeliSuurus);
 
         for (int i = 0; i < tabeliSuurus; i++) {
             System.out.print("| ");
             for (int j = 0; j < tabeliSuurus; j++) {
-
                 if (i == j || i + j == (tabeliSuurus - 1)) {
                     System.out.print("x ");
                 } else {
                     System.out.print("0 ");
                 }
-                System.out.print("(i:" + i + " j:" + j + ") ");
+                //System.out.print("(i:" + i + " j:" + j + ") ");
             }
-            System.out.println("|"); //reavahetus
-
+            System.out.print("|"); //reavahetus
+            System.out.println();
         }
+        tryki22ris(tabeliSuurus);
+    }
 
-        for (int y = 0; y <= tabeliSuurus + 1; y++) {
-            System.out.print("--");
+
+    private static void tryki22ris(int tabelisuurus) {
+        for (int i = 0; i < tabelisuurus * 2 + 3; i++) {
+            System.out.print("-");
         }
         System.out.println();
     }
 
 }
+
+
