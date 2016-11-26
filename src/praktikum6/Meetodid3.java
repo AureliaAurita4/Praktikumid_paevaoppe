@@ -7,15 +7,13 @@ import lib.TextIO;
  */
 public class Meetodid3 {
     public static void main(String[] args) {
-
         System.out.println("Sisesta inimeste arv!");
         int inimesteArv = TextIO.getlnInt();
-
-        System.out.println(valik(inimesteArv));
+        System.out.println(valik(1, inimesteArv));
     }
 
-    public static int valik(int inimesteArv) {
-
-        return (int) (Math.random() * inimesteArv + 1);
+    public static int valik(int min, int max) {
+        int vahemik = max - min + 1;
+        return min + (int) (Math.random() * vahemik);
     }
 }

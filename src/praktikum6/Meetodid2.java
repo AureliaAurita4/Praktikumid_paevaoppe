@@ -46,6 +46,11 @@ public class Meetodid2 {
         }
     }
 
+    public static int kasutajaSisestus (String kysimus, int min, int max) {
+        System.out.println(kysimus);
+        return kasutajaSisestus(min, max);
+    }
+
 
 
 
